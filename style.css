@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+
+body {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c9eaf3;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: #14213D;
+    box-shadow: 1px 3px 3px gray;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+    margin: 10px;
+}
+
+#calculator {
+    background-color: #E5E5E5;
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 30px;
+    font-size: 40px;
+    color: white;
+    text-align: left;
+    border: none;
+    background-color: #000000;
+}
+
+button:hover {
+    background-color: #385181;
+}
+
+button:active {
+    background-color: #8eabe1;
+}
+
+.operator-btn {
+    background-color: #9a031e;
+}
+
+.operator-btn:hover {
+    background-color: #d1455e;
+}
+
+.operator-btn:active {
+    background-color: #ec798e;
+}
+
+#decimal-btn {
+    background-color: #264280;
+}
+
+#decimal-btn:hover {
+    background-color: #4261a5;
+}
+
+#decimal-btn:active {
+    background-color: #7891c7;
+}
+
+#c {
+    background-color: #FCA311;
+}
+
+#c:hover {
+    background-color: #e7b15a;
+}
+
+#c:active {
+    background-color: #e6c99a;
+}
