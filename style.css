@@ -90,6 +90,9 @@ button:active {
 
 #c {
     background-color: #FCA311;
+    grid-column: span 2;
+    width: auto;
+    border: 1px solid black;
 }
 
 #c:hover {
