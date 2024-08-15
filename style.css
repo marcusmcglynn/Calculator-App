@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 600;
     margin: 0;
     margin-bottom: 40px;
@@ -34,7 +34,7 @@ button {
 #keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 15px;
     padding: 25px;
     margin: 10px;
 }
@@ -42,7 +42,7 @@ button {
 #calculator {
     background-color: #E5E5E5;
     border-radius: 15px;
-    max-width: 500px;
+    max-width: 550px;
     overflow: hidden;
 }
 
@@ -93,6 +93,7 @@ button:active {
     grid-column: span 2;
     width: auto;
     border: 1px solid black;
+    margin-top: 5px;
 }
 
 #c:hover {
@@ -101,4 +102,102 @@ button:active {
 
 #c:active {
     background-color: #e6c99a;
+}
+
+/* ! @media */ 
+
+@media(max-height: 900px) {
+    h1 {
+        font-size: 43px;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 23px;
+    }
+    
+    button {
+        width: 95px;
+        height: 95px;
+        border-radius: 50px;
+        border: none;
+        background-color: #14213D;
+        box-shadow: 1px 3px 3px gray;
+        color: white;
+        font-size: 30px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+    
+    #keys {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    #calculator {
+        background-color: #E5E5E5;
+        border-radius: 15px;
+        max-width: 500px;
+        overflow: hidden;
+    }
+    
+    #display {
+        width: 100%;
+        padding: 30px;
+        font-size: 40px;
+        color: white;
+        text-align: left;
+        border: none;
+        background-color: #000000;
+    }
+}
+
+@media(max-width: 900px) {
+    h1 {
+        font-size: 43px;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 23px;
+    }
+    
+    button {
+        width: 95px;
+        height: 95px;
+        border-radius: 50px;
+        border: none;
+        background-color: #14213D;
+        box-shadow: 1px 3px 3px gray;
+        color: white;
+        font-size: 30px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+    
+    #keys {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    #calculator {
+        background-color: #E5E5E5;
+        border-radius: 15px;
+        max-width: 500px;
+        overflow: hidden;
+    }
+    
+    #display {
+        width: 100%;
+        padding: 30px;
+        font-size: 40px;
+        color: white;
+        text-align: left;
+        border: none;
+        background-color: #000000;
+    }
 }
